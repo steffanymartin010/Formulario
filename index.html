@@ -1,0 +1,111 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Tarea Formulario</title>
+    </head>
+
+    <body>
+        <!-- 
+        1.administrador
+        2.estudiante
+     -->
+     
+     <form action="" method="GET">
+         <h2>REGISTRO DE NOVEDADES</h2>
+            <br>
+         <label class="label">Ingresar Nombre</label>
+         <input type="text" placeholder="Nombre" minlength="3" maxlength="20" autofocus required title="ingresar Nombre">
+     <br>
+    <label class="label">Ingresar Apellido</label>
+    <input type="text" placeholder="Apellido" minlength="5" maxlength="40" required title="ingresar Apellido">
+     <br>
+    <label class= "edad">Edad</label>
+    <input type="number"  placeholder="21" min="1" maxlength="2" required title="ingresar edad" >
+    <br>
+    <label class="label">Email</label> 
+    <input type="email" minlength="6" maxlength="40" required placeholder="ej_Pedro109@gmail.com" title="ingresar email">
+    <br>
+
+    <label class="label">URL</label>
+    <input type="url"  required placeholder="Escribe la URL de tu página web personal" title="ingresar URL"> 
+    <br>
+  
+    <label class="label">Ciudad</label>
+    <select name="Ciudad" id="city" required title="ingresar Ciudad" >
+        <option selected="">seleccione Ciudad</option>
+        <option value="">Armenia</option>
+        <option value="">Arauca</option>
+        <option value="">Acacias</option>
+        <option value="">Barrancabermeja</option>
+        <option value="">Barranquilla</option>
+        <option value="">Bogotá</option>
+        <option value="">Bucaramanga</option>
+        <option value="">Cali</option>
+        <option value="">Cartago</option>
+        <option value="">Cartagena</option>
+        <option value="">Caucasia</option>
+        <option value="">quibdó</option>
+        <option value="">Ibagué</option>
+        <option value="">Medellin</option>
+        <option value="">Manizales</option>
+        <option value="">Pereira</option>
+        <option value="">Valledupar</option>
+    </select>
+    <br>
+        <label for="">fecha</label>
+        <input type="date" required title="ingresa la fecha en que llenaste este formulario">
+        <br>
+        <label for="">Hora</label> 
+        <input type="time" required title="ingresa la hora en que llenaste este formulario">
+        <br>
+        
+        <label for="">Mes</label>
+        <input type="month" title="ingresa el mes en que llenaste este formulario "required>
+        <br>
+        <label for="">semana</label>
+        <input type="week" title="ingrese el dia de la semana" required>
+        <br> 
+
+        <label for="">Número (min -10, max 10):</label>
+         <input type="number" title="ingrese un numero" min="-10" max="10" value="0" required />
+        <br>
+
+        <label for="">Telefono:</label>
+        <input type="tel" maxlength="10" minlength="7" required title="ingresa el numero de teléfono">
+        <br>
+
+        <label for>Término de búsqueda</label>
+        <input type="search" title="término de búsqueda" required>
+        <br>
+
+        <label for="">color favorito:<br><input type="color" name="color_control" required/></label>
+        
+        <label>Adjuntar un archivo:<input type="file" class="archiv"></input required></label>
+        
+        <label for="">Por favor ingrese su novedad</label>
+        <select name="NOVEDAD" id="" required title="ingresar tipo de novedad" >
+            <option selected="">seleccione novedad</option>
+            <option value="">Retiro o Cancelación</option>
+            <option value="">Traslado de sede</option>
+            <option value="">Cambio de Programa</option>
+            <option value="">Cambio de Jornada</option>
+            <option value="">Aplazamiento</option>
+            </select>
+            <br>
+
+            <div class="env-can">
+                <button type="submit">ENVIAR</button>
+                <input class="cancel" type="reset" value="Cancelar"> 
+            </div>
+    </form>
+
+    </body>
+</html>
+
+
+
+
+
